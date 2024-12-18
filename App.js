@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-  import { StyleSheet, Text, View, TextInput, Button, Image } from 'react-native';
-  import { Camera, CameraType } from 'expo-camera';
-  import { useState, useRef, useEffect } from 'react';
-  import * as ImageManipulator from 'expo-image-manipulator';
-  import { LinearGradient } from 'expo-linear-gradient';
-  import { Ionicons } from '@expo/vector-icons';
-
+import { StatusBar } from 'expo-status-bar'; // Corrected import
+import { StyleSheet, Text, View, TextInput, Button, Image } from 'react-native';
+import { Camera, CameraType } from 'expo-camera';
+import { useState, useRef, useEffect } from 'react';
+import * as ImageManipulator from 'expo-image-manipulator';
+import { LinearGradient } from 'expo-linear-gradient';
+import { Ionicons } from '@expo/vector-icons';
   export default function App() {
     const [hasPermission, setHasPermission] = useState(null);
     const [watermarkText, setWatermarkText] = useState('');
